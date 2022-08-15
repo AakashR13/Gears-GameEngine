@@ -6,6 +6,10 @@ extern Gears::Application* Gears::CreateApplication();
 
 int main(int argc, char** argv)
 {
+	Gears::Log::Init();
+	GR_CORE_WARN("Initialized Log!");
+	GR_INFO("Yo log!");
+	
 	printf("Gears Engine starts here!\n");
 	auto app = Gears::CreateApplication();
 	app->Run();
@@ -13,3 +17,4 @@ int main(int argc, char** argv)
 }
 
 #endif // GR_PLATFORM_WINDOWS
+
