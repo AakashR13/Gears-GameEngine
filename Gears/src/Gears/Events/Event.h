@@ -1,9 +1,8 @@
 #pragma once
+#include "grpch.h"
 
 
 #include "Gears/Core.h"
-#include <string>
-#include <functional>
 
 
 namespace Gears {

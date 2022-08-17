@@ -15,6 +15,9 @@ project "Gears"
     targetdir("bin/" ..outputdir .. "/%{prj.name}")
     objdir("bin-int/" ..outputdir .. "/%{prj.name}")
 
+    pchheader "grpch.h"
+    pchsource "Gears/src/grpch.cpp"
+
     files
     {
         "%{prj.name}/src/**.h ",
