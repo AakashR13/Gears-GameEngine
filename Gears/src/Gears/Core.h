@@ -9,3 +9,5 @@
 #else
 	#error Gears only supports Windows!
 #endif // GR_PLATFORM_WINDOWS
+
+#define BIT(x) (1 << x)

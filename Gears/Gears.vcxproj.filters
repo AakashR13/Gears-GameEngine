@@ -4,6 +4,9 @@
     <Filter Include="Gears">
       <UniqueIdentifier>{F7D93C0D-63EE-64BE-2C70-081E984361EF}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Gears\Events">
+      <UniqueIdentifier>{FBC928DE-E72C-B882-90B2-F0387CF48305}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Gears.h" />
@@ -15,6 +18,18 @@
     </ClInclude>
     <ClInclude Include="src\Gears\EntryPoint.h">
       <Filter>Gears</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Gears\Events\ApplicationEvent.h">
+      <Filter>Gears\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Gears\Events\Event.h">
+      <Filter>Gears\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Gears\Events\KeyEvent.h">
+      <Filter>Gears\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Gears\Events\MouseEvent.h">
+      <Filter>Gears\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\Gears\Log.h">
       <Filter>Gears</Filter>
