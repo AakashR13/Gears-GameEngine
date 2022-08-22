@@ -12,6 +12,7 @@
 #include <unordered_map>
 #include <unordered_set>
 
+#include "Gears/Log.h"
 
 #ifdef GR_PLATFORM_WINDOWS
 	#include <Windows.h>
