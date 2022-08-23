@@ -9,8 +9,10 @@ outputdir ="%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 -- Include directories relative to root folder
 IncludeDir = {}
 IncludeDir["GLFW"] = "Gears/vendor/GLFW/include"
+IncludeDir["Glad"] = "Gears/vendor/Glad/include"
 
 include "Gears/vendor/GLFW"
+include "Gears/vendor/Glad"
 
 project "Gears"
     location "Gears"
@@ -34,12 +36,14 @@ project "Gears"
     {
         "%{prj.name}/src",
         "%{prj.name}/vendor/spdlog/include",
-        "%{IncludeDir.GLFW}"
+        "%{IncludeDir.GLFW}",
+        "%{IncludeDir.Glad}"
     }
 
     links
     {
         "GLFW",
+        "Glad",
         "opengl32.lib"
     }
 
@@ -51,7 +55,8 @@ project "Gears"
         defines
         {
             "GR_PLATFORM_WINDOWS",
-            "GR_BUILD_DLL"
+            "GR_BUILD_DLL",
+            "GLFW_INCLUDE_NONE"
         }
 
         postbuildcommands
