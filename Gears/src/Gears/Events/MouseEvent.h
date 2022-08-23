@@ -29,6 +29,7 @@ namespace Gears {
 
 	class GEARS_API MouseScrolledEvent : public Event
 	{
+	public:
 		MouseScrolledEvent(float xOffset, float yOffset)
 			:m_XOffset(xOffset), m_YOffset(yOffset){}
 
@@ -61,11 +62,11 @@ namespace Gears {
 		int m_Button;
 	};
 
-	class GEARS_API MouseButtonPressedEvent : public Event
+	class GEARS_API MouseButtonPressedEvent : public MouseButtonEvent
 	{
 	public:
 		MouseButtonPressedEvent(int button)
-			: m_Button(button) {}
+			: MouseButtonEvent(button) {}
 		
 		std::string ToString() const override
 		{
@@ -77,11 +78,11 @@ namespace Gears {
 		EVENT_CLASS_TYPE(MouseButtonPressed)
 	};
 
-	class GEARS_API MouseButtonReleasedEvent : public Event
+	class GEARS_API MouseButtonReleasedEvent : public MouseButtonEvent
 	{
 	public:
 		MouseButtonReleasedEvent(int button)
-			: m_Button(button) {}
+			: MouseButtonEvent(button) {}
 
 		std::string ToString() const override
 		{

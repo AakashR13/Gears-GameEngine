@@ -37,6 +37,12 @@
     <ClInclude Include="src\Gears\Events\MouseEvent.h">
       <Filter>Gears\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\Gears\Layer.h">
+      <Filter>Gears</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Gears\LayerStack.h">
+      <Filter>Gears</Filter>
+    </ClInclude>
     <ClInclude Include="src\Gears\Log.h">
       <Filter>Gears</Filter>
     </ClInclude>
@@ -50,6 +56,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Gears\Application.cpp">
+      <Filter>Gears</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Gears\Layer.cpp">
+      <Filter>Gears</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Gears\LayerStack.cpp">
       <Filter>Gears</Filter>
     </ClCompile>
     <ClCompile Include="src\Gears\Log.cpp">

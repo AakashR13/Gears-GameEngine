@@ -61,14 +61,17 @@ project "Gears"
 
     filter "configurations:Debug"
         defines "GR_DEBUG"
+        buildoptions "/MDd"
         symbols "On"
 
     filter "configurations:Release"
         defines "GR_RELEASE"
+        buildoptions "/MDd"
         symbols "On"
         
     filter "configurations:Dist"
         defines "GR_DIST"
+        buildoptions "/MDd"
         symbols "On"
 
 
@@ -110,12 +113,15 @@ project "Sandbox"
 
     filter "configurations:Debug"
         defines "GR_DEBUG"
+        buildoptions "/MDd"
         symbols "On"
 
     filter "configurations:Release"
         defines "GR_RELEASE"
+        buildoptions "/MDd"
         symbols "On"
         
     filter "configurations:Dist"
         defines "GR_DIST"
+        buildoptions "/MDd"
         symbols "On"

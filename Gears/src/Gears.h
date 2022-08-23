@@ -4,6 +4,7 @@
 
 #include <stdio.h>
 #include "Gears/Application.h"
+#include "Gears/Layer.h"
 #include "Gears/Log.h"
 	 
 // ------Entry Point----------------
