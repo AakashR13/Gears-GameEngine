@@ -6,7 +6,8 @@
 #include "Gears/Application.h"
 #include "Gears/Layer.h"
 #include "Gears/Log.h"
-	 
+#include "Gears/ImGui/ImGuiLayer.h"
+
 // ------Entry Point----------------
 #include "Gears/EntryPoint.h"
 // ------Entry Point----------------

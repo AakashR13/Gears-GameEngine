@@ -51,7 +51,7 @@ namespace Gears {
 		glfwMakeContextCurrent(m_Window);
 		int status = gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
 		GR_CORE_ASSERT(status, "Failed to initialize GLAD");
-		glfwSetWindowUserPointer(m_Window, &m_Data);
+			glfwSetWindowUserPointer(m_Window, &m_Data);
 		SetVSync(true);
 
 		//Set Event callbacks
