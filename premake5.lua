@@ -20,8 +20,8 @@ project "Gears"
     location "Gears"
     kind "SharedLib"
     language "C++"
-
-
+    staticruntime "off"
+	
     targetdir("bin/" ..outputdir .. "/%{prj.name}")
     objdir("bin-int/" ..outputdir .. "/%{prj.name}")
 
@@ -54,7 +54,6 @@ project "Gears"
 
     filter "system:windows"
         cppdialect "C++17"
-        staticruntime "On"
         systemversion "latest"
 
         defines
@@ -71,17 +70,17 @@ project "Gears"
 
     filter "configurations:Debug"
         defines "GR_DEBUG"
-        buildoptions "/MDd"
+        runtime "Debug"
         symbols "On"
 
     filter "configurations:Release"
         defines "GR_RELEASE"
-        buildoptions "/MDd"
+        runtime "Release"
         symbols "On"
         
     filter "configurations:Dist"
         defines "GR_DIST"
-        buildoptions "/MDd"
+        runtime "Release"
         symbols "On"
 
 
@@ -90,7 +89,8 @@ project "Sandbox"
         location "Sandbox"
         kind "ConsoleApp"
         language "C++"
-
+        staticruntime "off"
+		
         targetdir("bin/" ..outputdir .. "/%{prj.name}")
         objdir("bin-int/" ..outputdir .. "/%{prj.name}")
 
@@ -113,7 +113,6 @@ project "Sandbox"
     
     filter "system:windows"
         cppdialect "C++17"
-        staticruntime "On"
         systemversion "latest"
 
         defines
@@ -123,15 +122,15 @@ project "Sandbox"
 
     filter "configurations:Debug"
         defines "GR_DEBUG"
-        buildoptions "/MDd"
+        runtime "Debug"
         symbols "On"
 
     filter "configurations:Release"
         defines "GR_RELEASE"
-        buildoptions "/MDd"
+        runtime "Release"
         symbols "On"
         
     filter "configurations:Dist"
         defines "GR_DIST"
-        buildoptions "/MDd"
+        runtime "Release"
         symbols "On"
