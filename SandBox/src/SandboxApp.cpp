@@ -10,12 +10,15 @@ public:
 
 	void OnUpdate() override
 	{
-		GR_INFO("ExampleLayer::Update");
+	//	GR_INFO("ExampleLayer::Update");
+
+		if (Gears::Input::IsKeyPressed(GR_KEY_TAB))
+			GR_TRACE("Tab key pressed!");
 	}
 
 	void OnEvent(Gears::Event & event) override
 	{
-		GR_TRACE("{0}",event);
+		//GR_TRACE("{0}",event);
 	}
 };
 
